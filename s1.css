@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 64px;
+    background: #f4f4f4;
+    border-bottom: 5px solid #b3001b;
+}
+
+.brand {
+    font-size: 18px;
+    font-weight: 700;
+    color: #b3001b;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    background: #e6e6e6;
+    border-radius: 30px;
+    padding: 6px;
+}
+
+.nav a {
+    padding: 8px 18px;
+    margin: 0 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.nav a:hover {
+    background: #b3001b;
+    color: #fff;
+}
+
+.nav a.active {
+    background: #b3001b;
+    color: #fff;
+}
+
+
+
+.hero {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    color: #fff;
+}
+
+.hero-project {
+    background: linear-gradient(135deg, #b3001b 65%, #8f0015 65%);
+}
+
+.hero-uni {
+    background: linear-gradient(135deg, #9c0018 65%, #6e0010 65%);
+}
+
+.hero-faculty {
+    background: linear-gradient(135deg, #b3001b 65%, #7a0012 65%);
+}
+
+.hero-box h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.hero-box p {
+    font-size: 16px;
+}
+
+
+.wrap {
+    padding: 50px;
+    background: #fafafa;
+}
+
+.section-title {
+    margin-bottom: 25px;
+    font-size: 22px;
+    color: #333;
+}
+
+.card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+
+.card {
+    width: 320px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card-grid.three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* บังคับ 3 คอลัมน์ */
+    gap: 30px;
+    max-width: 1100px;   /* ต้องกว้างพอ */
+    margin: 0 auto;      /* จัดกลาง */
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.img-card {
+    height: 180px;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-weight: 500;
+}
+
+
+.faculty-box {
+    display: flex;
+    gap: 40px;
+    background: #fff;
+    padding: 30px;
+    border-left: 6px solid #b3001b;
+}
+
+.faculty-image {
+    width: 40%;
+    background: #e0e0e0;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+.faculty-list {
+    columns: 2;
+    list-style: none;
+}
+
+.faculty-list li {
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+
+.footer {
+    background: #b3001b;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    margin-top: 40px;
+    width: 100%;
+}
